@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>DevOps-micro-project</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:0;
+background:#0f2027;
+background:linear-gradient(to right,#2c5364,#203a43,#0f2027);
+color:white;
+}
+
+.header{
+text-align:center;
+padding:30px;
+background:black;
+}
+
+.header h1{
+color:#00ffc3;
+font-size:42px;
+}
+
+.section{
+width:85%;
+margin:auto;
+margin-top:25px;
+}
+
+.card{
+background:white;
+color:black;
+padding:20px;
+border-radius:10px;
+margin-bottom:25px;
+box-shadow:0px 6px 15px rgba(0,0,0,0.5);
+}
+
+.card h2{
+color:#0077cc;
+}
+
+.tools img{
+width:80px;
+margin:10px;
+}
+
+.pipeline{
+display:flex;
+justify-content:space-around;
+flex-wrap:wrap;
+text-align:center;
+}
+
+.step{
+background:#f1f1f1;
+padding:15px;
+border-radius:10px;
+margin:10px;
+width:150px;
+}
+
+.step img{
+width:60px;
+}
+
+.footer{
+background:black;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<h1>DevOps Micro Project</h1>
+<h2>Group-9 : Create a Continuous Delivery of a Java Web Application</h2>
+
+<p>Java Web Application Deployment using Jenkins, Maven, Tomcat & AWS</p>
+
+</div>
+
+
+<div class="section">
+
+<div class="card">
+
+<h2>Project Overview</h2>
+
+<p>
+This DevOps Micro Project demonstrates the implementation of a
+<b>Continuous Delivery (CD) pipeline</b> for a Java Web Application.
+</p>
+
+<p>
+The pipeline automatically builds and deploys the application whenever
+developers push code changes to GitHub.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>DevOps Tools Used</h2>
+
+<div class="tools">
+
+<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968875.png">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png">
+<img src="https://cdn-icons-png.flaticon.com/512/919/919853.png">
+<img src="https://cdn-icons-png.flaticon.com/512/919/919836.png">
+
+</div>
+
+<p>
+GitHub • Jenkins • Maven • Apache Tomcat • AWS EC2
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>CI/CD Pipeline Workflow</h2>
+
+<div class="pipeline">
+
+<div class="step">
+<img src="https://cdn-icons-png.flaticon.com/512/1006/1006555.png">
+<p>Developer</p>
+</div>
+
+<div class="step">
+<img src="https://cdn-icons-png.flaticon.com/512/25/25231.png">
+<p>GitHub</p>
+</div>
+
+<div class="step">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968875.png">
+<p>Jenkins</p>
+</div>
+
+<div class="step">
+<img src="https://cdn-icons-png.flaticon.com/512/5968/5968342.png">
+<p>Maven Build</p>
+</div>
+
+<div class="step">
+<img src="https://cdn-icons-png.flaticon.com/512/919/919853.png">
+<p>WAR File</p>
+</div>
+
+<div class="step">
+<img src="https://cdn-icons-png.flaticon.com/512/919/919836.png">
+<p>Tomcat Deploy</p>
+</div>
+
+<div class="step">
+<img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png">
+<p>Live Application</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>Deployment Information</h2>
+
+<p>
+Application deployed successfully on
+<b>AWS EC2 Cloud Server</b>.
+</p>
+
+<p>
+Server Time:
+<b id="time"></b>
+</p>
+
+<p>
+Pipeline Status: <b style="color:green;">SUCCESS</b>
+</p>
+
+</div>
+
+</div>
+
+
+<div class="footer">
+
+<p>DevOps Micro Project | Continuous Delivery Pipeline using Jenkins</p>
+
+</div>
+
+
+<script>
+
+function updateTime(){
+const now = new Date();
+document.getElementById("time").innerHTML = now;
+}
+
+setInterval(updateTime,1000);
+
+</script>
+
+</body>
+</html>
